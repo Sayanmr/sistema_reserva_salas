@@ -31,7 +31,8 @@ currentItem2 += 4;
 if(currentItem2 >= boxes.length) { 
     loadMoreBtn2.style.display= 'none'
 }
-}/*
+}
+/*
 let loadMoreBtn1 = document.querySelector('#load-more-1');
 let currentItem1 = 4;
 
