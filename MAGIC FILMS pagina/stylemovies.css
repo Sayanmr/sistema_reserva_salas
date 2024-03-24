@@ -88,7 +88,7 @@ object-fit: cover;
     width: calc(80% - 80px);
     padding: 40px;
     margin-top: 480px;
-    margin-left: 120px;
+    margin-left: 150px;
 }
 .article{
     color:white;    
@@ -111,6 +111,6 @@ object-fit: cover;
 .d img{
     background-color: transparent;
     box-shadow: none;
-    margin-left: 1650px;
-    margin-top: 580px;
+    margin-left: 1500px;
+    margin-top: 620px;
 }
