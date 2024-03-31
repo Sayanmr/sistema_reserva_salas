@@ -309,21 +309,6 @@ margin-bottom: 20px;/*separacion para abajo del texto */
 }
 } /* en estos comandos esta la configuracion del menu y su contenido*/
 
-.content {
-    position: relative;
-    animation-name: slide-in;
-    animation-duration: 2s;
-    }
-    
-    @keyframes slide-in {
-    from {
-    transform: translateY(-100%);
-    }
-    to {
-    transform: translateY(0);
-    }
-    }
-
 .poster:hover {
 transform: scale(1.2);
 transition: all 0.5s ease;
