@@ -1,0 +1,203 @@
+/* Variables de color y tamaño */
+:root {
+    --primary-color: #cdc0db;
+    --secondary-color: #333;
+    --text-color: #FFF;
+    --font-size-base: 16px;
+    background: linear-gradient(45deg,darkred,black);
+    background-size: 400%,400%;
+    animation: cambiar 5s ease infinite;
+    min-height: 100vh;
+  }
+  @keyframes cambiar{
+    0%{background-position: 0 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0 50%;}
+}
+  /* Reestablecer estilos por defecto */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+ /* Estilos generales */
+ body {
+    font-family: Arial, sans-serif;
+    font-size: var(--font-size-base);
+    color: var(--text-color);
+  }
+  
+  
+ a {
+    text-decoration: none;
+    color: var(--primary-color);
+  }
+  
+  /* Estilos de header y nav */
+  header {
+    background-color:transparent;
+    color: var(--text-color);
+    padding: 1rem;
+  }
+  
+  
+ nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  
+/* Estilos de hero section */
+  .hero {
+    background-size: cover;
+    background-position: center;
+    margin-bottom: -100px;
+    color: var(--text-color);
+  }
+  
+  
+  .hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos de reservation-form section */
+  .reservation-form {
+    
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: var(--secondary-color);
+    border-radius: 20px;
+  }
+  
+  
+  .reservation-form h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  
+  
+  
+  /* Estilos de formulario */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  
+  
+  label {
+    margin-bottom: 5px;
+  }
+  
+  input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  
+  #movie,
+  #date {
+    width: 100%;
+  }
+  
+  
+  #clock {
+      position: relative;
+        width: 200px;
+        height: 200px;
+    
+      border: 2px solid #e20000;
+        border-radius: 50%;
+      }
+      
+      #clock input {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100px;
+        height: 30px;
+        text-align: center;
+      }
+  
+  
+  
+  #seats-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  
+ .seat-button {
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  
+ .reservation-form button {
+    background-color: rgb(236, 0, 0);
+    color: var(--text-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .reservation-form button:hover {
+    background-color: #7e0202;
+    }
+
+ /* Estilos de footer */
+  footer {
+    color: var(--text-color);
+    padding: 10px;
+    text-align: center;
+  }
+
+/*Botones de las sillas (tamaño: alto y ancho)*/
+  button.seat {
+    width: 70px;
+    height: 50px;
+    
+  background-color: #f80404b6;
+    border: 1px solid #999;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 20px;
+  }
+  
+  button.seat:hover {
+  background-color: #800000;
+  }
+
+  .seat {
+    margin: 5px;
+  }
+
+  .reserved {
+    background-color: gray;
+    color: white;
+    pointer-events: none; /* Deshabilita la interacción */
+  }
+
+  .selected {
+    background-color: yellow;
+  }
+
+  #logo {
+    width: 200px; /* Ancho máximo de 200px */
+        height: 200px; /* Alto máximo de 100px */
+        align-content: center;
+    }
