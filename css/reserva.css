@@ -1,0 +1,93 @@
+/* Variables de color y tamaño */
+:root {
+    --primary-color: #cdc0db;
+    --secondary-color: #333;
+    --text-color: #FFF;
+    --font-size-base: 16px;
+    background: linear-gradient(45deg,darkred,black);
+    background-size: 400%,400%;
+    animation: cambiar 5s ease infinite;
+    min-height: 100vh;
+  }
+  @keyframes cambiar{
+    0%{background-position: 0 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0 50%;}
+}
+  /* Reestablecer estilos por defecto */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+ /* Estilos generales */
+#logo{
+  width: 200px;
+}
+ body {
+    font-family: Arial, sans-serif;
+    font-size: var(--font-size-base);
+    color: var(--text-color);
+  }
+  
+  
+ a {
+    text-decoration: none;
+    color: var(--primary-color);
+  }
+  
+  /* Estilos de header y nav */
+  header {
+    background-color:transparent;
+    color: var(--text-color);
+    padding: 1rem;
+  }
+  
+  
+ nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  
+/* Estilos de hero section */
+  .hero {
+    background-size: cover;
+    background-position: center;
+    margin-bottom: -100px;
+    color: var(--text-color);
+  }
+  
+  
+  .hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos de reservation-form section */
+  .reservation-form {
+    
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: var(--secondary-color);
+    border-radius: 20px;
+  }
+  
+  
+  .reservation-form h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  /* Estilos de formulario */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 5px;
+  }
